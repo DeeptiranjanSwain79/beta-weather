@@ -1,0 +1,81 @@
+.titlebar {
+	height: 3.5vmax;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+	margin: 10vmax 7vmax 0 7vmax;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.titlebar > div:first-child > div {
+	display: flex;
+	align-items: center;
+}
+
+.titlebar > div:first-child > div > p {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 1vmax;
+	color: #1d2540;
+}
+
+.titlebar > div:first-child > h6 {
+	margin-top: -0.5vmax;
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 300;
+	font-size: 0.8vmax;
+	line-height: 16px;
+	color: #606060;
+}
+
+.titlebar > div:last-child {
+	width: 30%;
+	display: flex;
+}
+
+.titlebar > div:last-child > input {
+	width: 90%;
+	padding: 0.5vmax 0.7vmax;
+	border: none;
+	border-radius: 8px;
+	font-family: "Roboto";
+	font-style: italic;
+	font-weight: 400;
+	font-size: 1vmax;
+	line-height: 16px;
+	color: #444444;
+}
+
+.titlebar > div:last-child > img {
+    position: relative;
+    right: 2.2vmax;
+}
+
+@media screen and (max-width: 600px) {
+	.titlebar {
+		margin: 30vmax 4vmax 0 4vmax;
+		width: 100%;
+		flex-direction: column-reverse;
+	}
+	.titlebar > div:last-child {
+		width: 100%;
+	}
+	.titlebar > div:last-child > input {
+		font-size: 3vmax;
+	}
+	.titlebar > div:last-child > img {
+		position: absolute;
+		margin-right: 4vmax;
+	}
+	.titlebar > div:first-child {
+		text-align: left;
+	}
+	.titlebar > div:first-child > div > p {
+		font-size: 3vmax;
+	}
+	.titlebar > div:first-child > h6 {
+		font-size: 2vmax;
+	}
+}

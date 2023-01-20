@@ -1,0 +1,18 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+.cPointer {
+	cursor: pointer;
+}
+
+body {
+	height: 100vh;
+	overflow: hidden;
+	background: radial-gradient(50% 50% at 50% 50%, #e0e8f1 0%, #bfcad6 100%);
+}
+
+@media screen and (max-width: 600px) {
+	body {
+		overflow: auto;
+	}
+}

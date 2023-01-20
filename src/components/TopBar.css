@@ -1,0 +1,51 @@
+.topbar {
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	background: rgba(0, 0, 0, 0.49);
+	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.12);
+	width: 90%;
+    padding: 0 5.5vmax;
+    display: flex;
+    justify-content: space-between;
+}
+
+.topbar> div {
+    display: flex;
+    align-items: center;
+}
+
+.topbar > div > h1 {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 700;
+	font-size: 1.2vmax;
+	color: #ffffff;
+    margin-left: 0.3vmax;
+	padding-top: 0.63vmax;
+}
+
+.topbar > div:last-child > h1 {
+	font-family: "Roboto";
+	font-style: normal;
+	font-weight: 300;
+	font-size: 1vmax;
+	color: #ffffff;
+}
+
+
+@media screen and (max-width: 600px) {
+	.topbar {
+		width: 90%;
+	}
+	.topbar > div > h1 {
+		font-size: 4vmax;
+	}
+	.topbar > div:last-child {
+		flex-direction: column;
+		border-left: 1px solid #fff;
+	}
+	.topbar > div:last-child > h1 {
+		font-size: 3vmax;
+	}
+}
